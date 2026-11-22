@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import { program } from 'commander';
 import chalk from 'chalk';
-import { getWeather, getForecast } from './api';
-import { saveFavorite, getFavorites } from './storage';
-import { formatWeather, formatForecast } from './formatter';
+import { getWeather, getForecast } from './api.js';
+import { saveFavorite, getFavorites } from './storage.js';
+import { formatWeather, formatForecast } from './formatter.js';
 program
   .version('1.0.0')
   .description('Приложение для получения информации о погоде')
